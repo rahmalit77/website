@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Lit_Rahma</title>
+<link rel="stylesheet" type="text/css" href="style1.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+ 
+ <header>
+
+ 	<div class="header">
+ 	  <div class="contact">
+ 	  	<img src="img/email3.jpg"alt="email" style="width:30px;height:30px;"><a href="emailto:rahma.lit77@gmail.com">rahma.lit77@gmail.com</a>
+ 	  	<img src="img/phone3.jpg " alt="phone" style="width: 30px;height: 30px;"><span>+213 6 63 60 96 29</span>
+       
+ 	  </div>
+    <div class="logo">
+       <ul>
+        <li><a class="menu-item" href="file:///C:/Users/LITIM%20RAM/Desktop/web_site/index.html"></a>page d’accueil</li>
+        <li><a class="menu-item" href="file:///C:/Users/LITIM%20RAM/Desktop/web_site/photos.html"></a> photos</li>
+        <li><a class="menu-item" href="file:///C:/Users/LITIM%20RAM/Desktop/web_site/cv.html"></a>CV</li>
+        <li><a class="menu-item" href="#"></a>Comments</li>
+      </ul>
+      
+    </div>
+       	   
+ 	  <div class="social-media">
+
+ 		<ul>
+ 			<li><a href="a"><img src="img/facebook3.jpg" alt="facebook" style="width:35px;height:35px;"></a></li>
+ 			<li><a href="a"><img src="img/google+3.jpg" alt="google+" style="width:35px;height:35px;"></a></li>
+ 			<li><a href="a"><img src="img/telegram3.jpg" alt="telegram" style="width:35px;height:35px;"></a></li>
+ 		</ul>
+ 	 </div>
+
+ 	</div>
+
+
+ </header>
+
+ <div class="content1">
+ <center>
+<table id="myTable"  border="1px" width="1000px" >
+  <hr>
+    <td>Nom</td>
+    <td>Commentaire</td>
+  </hr>
+ 
+</table>
+
+<br>
+Nome: <input type="text" id="nome" value="nome" >
+
+Commentaire: <input type="text" id="commentaire" value="Commentaire">
+
+<button onclick="myCreateFunction()">Ajouter commentaire</button>
+
+</center>
+<script>
+function myCreateFunction() {
+  var table = document.getElementById("myTable"); 
+ 
+  var row = table.insertRow(1);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  
+  cell1.innerHTML = document.getElementById("nome").value ;
+  
+  cell2.innerHTML = document.getElementById("commentaire").value ;
+    
+}
+
+function myDeleteFunction() {
+  document.getElementById("myTable").deleteRow(0);
+}
+</script>
+ 	
+ </div>
+ 
+ 
+ </body>
+</html>
